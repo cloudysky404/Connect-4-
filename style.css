@@ -1,17 +1,55 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    background-color: #f4f4f4;
+}
+
+
+h1 { 
+    color: navy;
+}
+
+
+#winner {
+    min-height: 35px;
+}
+
+
+#turn {
+    color: #333;
+}
+
+
+#restart-btn {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 8px;
+
+    transition: transform 0.2s;
+}
+
+
+#restart-btn:hover {
+    transform: scale(1.05);
 }
 
 
 #board {
     height: 540px;
     width: 630px;
+
     background-color: blue;
     border: 10px solid navy;
 
-
     margin: 0 auto;
+
     display: flex;
     flex-wrap: wrap;
 }
@@ -20,15 +58,18 @@ body {
 .tile {
     height: 70px;
     width: 70px;
+
     margin: 5px;
 
     background-color: white;
     border-radius: 50%;
     border: 5px solid navy;
+
+    box-sizing: border-box;
 }
 
 
-.reb-piece {
+.red-piece{
     background-color: red;
 }
 
